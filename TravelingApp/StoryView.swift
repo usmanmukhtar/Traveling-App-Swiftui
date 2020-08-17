@@ -110,7 +110,15 @@ class StoryTimer: ObservableObject {
     }
     
     func advance(by number: Int) {
-        let newProgress = (Int(self.progress) + number) % self.max
+        var newProgress = (Int(self.progress) + number)
         self.progress = Double(newProgress)
+        
+        if newProgress == self.max {
+            newProgress = 0
+            self.progress = Double(newProgress)
+            self.show = false
+        } else if newProgress < 0 {
+            self.progress = 0
+        }
     }
 }

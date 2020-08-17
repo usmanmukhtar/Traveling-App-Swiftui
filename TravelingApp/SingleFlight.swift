@@ -2,19 +2,18 @@
 //  SingleFlight.swift
 //  TravelingApp
 //
-//  Created by Usman Mukhtar on 11/08/2020.
+//  Created by Usman Mukhtar on 15/08/2020.
 //
 
 import SwiftUI
 
 struct SingleFlight: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    
     @State private var rating = 4
     
     var rows = Array(repeating: GridItem(.fixed(60)), count: 1)
+    
     var body: some View {
-        
         VStack {
             ZStack (alignment: .top){
                 ZStack {
@@ -27,161 +26,145 @@ struct SingleFlight: View {
                         .rotationEffect(Angle(degrees: -45))
                         .frame(height: 260)
                 }
-                .clipShape(CustomShape(leftcorner: .bottomLeft, rightcorner: .bottomRight, radii: 30))
+                .clipShape(CustomShape(leftCorner: .bottomLeft, rightCorner: .bottomRight, radii: 30))
                 .frame(height: 260)
-            
+                
                 ZStack {
                     VStack {
-                    HStack (spacing: 20) {
-                        VStack(alignment: .leading){
-                            Text("KNO")
-                                .font(.title)
-                                .foregroundColor(.black)
-                                .fontWeight(.semibold)
-                            
-                            Text("12:33")
-                                .font(.subheadline)
-                                .foregroundColor(.gray)
-                            
-                        }
-                        
-                        Spacer()
-                        
-                        Image(systemName: "airplane")
-                            .foregroundColor(.gray)
-                            .font(Font.title2.bold())
-                        
-                        Spacer()
-                        
-                        VStack(alignment: .trailing){
-                            Text("HND")
-                                .font(.title)
-                                .foregroundColor(.black)
-                                .fontWeight(.semibold)
-                            
-                            Text("15.21")
-                                .font(.subheadline)
-                                .foregroundColor(.gray)
-                        }
-                    }
-                    
-                    HStack {
-                        Text("Garuda Indonesia")
-                            .font(.title2)
-                            .fontWeight(.semibold)
-                        
-                        Spacer()
-                        
-                        RatingView(rating: $rating)
-                        
-                    }.padding(.top, 20)
-                    
-                    HStack {
-                        Text("Company logo")
-                            .font(.subheadline)
-                            .foregroundColor(Color.gray.opacity(0.5))
-                        
-                        Spacer()
-                        
-                        Text("120k review")
-                            .foregroundColor(Color.gray)
-                    }
-                    
-                    HStack {
-                        VStack (alignment: .leading){
-                            Text("Code")
-                                .font(.subheadline)
-                                .foregroundColor(Color.gray.opacity(0.5))
-                            
-                            Text("AB-221")
-                                .font(.headline)
-                                .foregroundColor(Color.gray)
-                            
-                        }
-                        
-                        Spacer()
-                        
-                        VStack (alignment: .leading){
-                            Text("Class")
-                                .font(.subheadline)
-                                .foregroundColor(Color.gray.opacity(0.5))
-                            
-                            Text("Economy")
-                                .font(.headline)
-                                .foregroundColor(Color.gray)
-                            
-                        }
-                        
-                        Spacer()
-                        
-                        VStack (alignment: .leading){
-                            Text("Terminal")
-                                .font(.subheadline)
-                                .foregroundColor(Color.gray.opacity(0.5))
-                            
-                            Text("A")
-                                .font(.headline)
-                                .foregroundColor(Color.gray)
-                            
-                        }
-                        
-                        Spacer()
-                        
-                        VStack (alignment: .leading){
-                            Text("Gate")
-                                .font(.subheadline)
-                                .foregroundColor(Color.gray.opacity(0.5))
-                            
-                            Text("221")
-                                .font(.headline)
-                                .foregroundColor(Color.gray)
-                            
-                        }
-                    }
-                    .padding(.vertical, 20)
-                    
-                    Divider()
-                    
-                    HStack {
-                        HStack {
-                            ZStack {
-                                Circle()
-                                    .fill(Color.blue.opacity(0.1))
-                                    .frame(width: 40, height: 40)
+                        HStack(spacing: 20){
+                            VStack(alignment: .leading){
+                                Text("KNO")
+                                    .font(.title)
+                                    .foregroundColor(.black)
+                                    .fontWeight(.semibold)
                                 
-                                Text("2")
-                                    .font(.title2)
-                                    .foregroundColor(.blue)
-                                    .fontWeight(.bold)
+                                Text("12:33")
+                                    .font(.subheadline)
+                                    .foregroundColor(.gray)
                             }
                             
-                            Text("Child")
-                                .font(.title3)
-                                .fontWeight(.semibold)
-                                .foregroundColor(Color.gray.opacity(0.5))
+                            Spacer()
+                            
+                            VStack(alignment: .trailing){
+                                Text("HND")
+                                    .font(.title)
+                                    .foregroundColor(.black)
+                                    .fontWeight(.semibold)
+                                
+                                Text("15.21")
+                                    .font(.subheadline)
+                                    .foregroundColor(.gray)
+                            }
                         }
-                        
-                        Spacer()
                         
                         HStack {
-                            ZStack {
-                                Circle()
-                                    .fill(Color.blue.opacity(0.1))
-                                    .frame(width: 40, height: 40)
-                                
-                                Text("4")
-                                    .font(.title2)
-                                    .foregroundColor(.blue)
-                                    .fontWeight(.bold)
+                            Text("Garuda Indonesia")
+                                .font(.title2)
+                                .fontWeight(.semibold)
+                            
+                            Spacer()
+                            
+                            RatingView(rating: $rating)
+                        }.padding(.top, 20)
+                        
+                        HStack {
+                            Text("Company logo")
+                                .font(.subheadline)
+                                .foregroundColor(Color.gray.opacity(0.5))
+                            
+                            Spacer()
+                            
+                            Text("120k review")
+                                .foregroundColor(Color.gray)
+                        }
+                        
+                        HStack{
+                            VStack (alignment: .leading){
+                                Text("Code")
+                                    .font(.subheadline)
+                                    .foregroundColor(Color.gray)
                             }
                             
-                            Text("Adults")
-                                .font(.title3)
-                                .fontWeight(.semibold)
-                                .foregroundColor(Color.gray.opacity(0.5))
+                            Spacer()
+                            
+                            VStack (alignment: .leading){
+                                Text("Class")
+                                    .font(.subheadline)
+                                    .foregroundColor(Color.gray.opacity(0.5))
+                                
+                                Text("Economy")
+                                    .font(.headline)
+                                    .foregroundColor(Color.gray)
+                            }
+                            
+                            Spacer()
+                            
+                            VStack (alignment: .leading){
+                                Text("Terminal")
+                                    .font(.subheadline)
+                                    .foregroundColor(Color.gray.opacity(0.5))
+                                
+                                Text("A")
+                                    .font(.headline)
+                                    .foregroundColor(Color.gray)
+                            }
+                            
+                            Spacer()
+                            
+                            VStack (alignment: .leading){
+                                Text("Gate")
+                                    .font(.subheadline)
+                                    .foregroundColor(Color.gray.opacity(0.5))
+                                
+                                Text("221")
+                                    .font(.headline)
+                                    .foregroundColor(Color.gray)
+                            }
                         }
-                    }.padding(.top, 20)
-                }
+                        .padding(.vertical, 20)
+                        
+                        Divider()
+                        
+                        HStack {
+                            HStack {
+                                ZStack {
+                                    Circle()
+                                        .fill(Color.blue.opacity(0.1))
+                                        .frame(width: 40, height: 40)
+                                    
+                                    Text("2")
+                                        .font(.title2)
+                                        .foregroundColor(.blue)
+                                        .fontWeight(.bold)
+                                }
+                                
+                                Text("Child")
+                                    .font(.title3)
+                                    .foregroundColor(Color.gray.opacity(0.5))
+                                    .fontWeight(.semibold)
+                            }
+                            
+                            Spacer()
+                            
+                            HStack {
+                                ZStack {
+                                    Circle()
+                                        .fill(Color.blue.opacity(0.1))
+                                        .frame(width: 40, height: 40)
+                                    
+                                    Text("4")
+                                        .font(.title2)
+                                        .foregroundColor(.blue)
+                                        .fontWeight(.bold)
+                                }
+                                
+                                Text("Adults")
+                                    .font(.title3)
+                                    .foregroundColor(Color.gray.opacity(0.5))
+                                    .fontWeight(.semibold)
+                            }
+                        }.padding(.top, 20)
+                    }
                 }
                 .padding(.horizontal, 20)
                 .padding(.top, 40)
@@ -189,39 +172,38 @@ struct SingleFlight: View {
                 .background(Color.white)
                 .frame(width: UIScreen.main.bounds.width * 0.85)
                 .clipShape(ZigZag())
-                .clipShape(CustomShape(leftcorner: .topLeft, rightcorner: .topRight, radii: 20))
-                .offset(x: 0, y: 150)
-                .shadow(color: Color.gray.opacity(0.2), radius: 20.0, x: 0, y: 10.0)
-                    
+                .clipShape(CustomShape(leftCorner: .topLeft, rightCorner: .topRight, radii: 20))
+                .offset(y: 150)
+                .shadow(color: Color.gray.opacity(0.2), radius: 20, x:0, y:10)
             }
-            VStack (alignment: .leading){
+            
+            VStack(alignment: .leading) {
                 Text("Facilities")
                     .font(.subheadline)
                     .fontWeight(.bold)
                 
-                ScrollView(.horizontal, showsIndicators: false) {
-                    LazyHGrid (rows: rows, spacing: 10) {
-                        ForEach(bData){ item in
-                            RoundedRectangle(cornerRadius: 15)
+                ScrollView(.horizontal, showsIndicators: false){
+                    LazyHGrid(rows: rows, spacing: 10){
+                        ForEach(bData) { item in
+                            RoundedRectangle(cornerRadius: 15, style: .continuous)
                                 .fill(item.color)
                                 .frame(width: 140, height: 55)
                                 .overlay(
                                     HStack (spacing: 20){
                                         Image(systemName: item.icon)
-                                            .font(Font.title2.bold())
+                                            .font(Font.title.bold())
                                         
                                         Text(item.title)
                                             .font(.headline)
                                             .fontWeight(.semibold)
-                                            
                                     }
                                     .foregroundColor(.white)
                                 )
                         }
                     }
                 }
-            
-                HStack{
+                
+                HStack {
                     Text("Total you'll pay")
                         .foregroundColor(.gray)
                         .fontWeight(.bold)
@@ -234,12 +216,12 @@ struct SingleFlight: View {
                         .font(.title)
                         .fontWeight(.bold)
                 }
-                .padding(.top, 50)
+                .padding(.top,50)
                 .padding(.trailing, 40)
             }
-            .padding(.top, 10)
+            .padding(.top,10)
             .padding(.leading, 40)
-            .offset(x: 0, y: 150)
+            .offset(y: 150)
             
             Spacer()
             
@@ -257,26 +239,25 @@ struct SingleFlight: View {
             .background(Color.blue)
             .buttonStyle(PlainButtonStyle())
             .cornerRadius(10)
-            .shadow(color: Color.blue.opacity(0.5), radius: 6, x: 0, y: 6)
-
+            .shadow(color: Color.blue.opacity(0.5), radius: 6, x:0, y:6)
         }
         .edgesIgnoringSafeArea(.top)
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading:
-            Button(action: {
-                self.presentationMode.wrappedValue.dismiss()
-            }) {
-                Image(systemName: "chevron.left")
-                    .font(Font.title2.bold())
-                    .foregroundColor(.white)
-        })
+                                Button(action: {
+                                    self.presentationMode.wrappedValue.dismiss()
+                                }){
+                                    Image(systemName: "chevron.left")
+                                        .font(Font.title2.bold())
+                                        .foregroundColor(.white)
+                                })
     }
 }
 
 struct ZigZag: Shape {
-    
     func path(in rect: CGRect) -> Path {
         var path = Path()
+        
         path.move(to: CGPoint.zero)
         path.addLine(to: CGPoint(x: rect.maxX, y: 0))
         path.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY))
@@ -292,6 +273,8 @@ struct ZigZag: Shape {
         
         return path
     }
+    
+    
 }
 
 struct Buttons: Identifiable {
@@ -300,7 +283,7 @@ struct Buttons: Identifiable {
     var icon: String
     var color: Color
 }
-
+ 
 var bData = [
     Buttons(title: "Snacks", icon: "bag.fill", color: Color.green),
     Buttons(title: "Wifi", icon: "wifi", color: Color.purple),
@@ -308,8 +291,3 @@ var bData = [
     Buttons(title: "Transport", icon: "tram.fill", color: Color.blue),
 ]
 
-struct SingleFlight_Previews: PreviewProvider {
-    static var previews: some View {
-        SingleFlight()
-    }
-}

@@ -17,7 +17,7 @@ struct SearchView: View {
             TextField("Where you want to go?", text: $text)
                 .padding(15)
                 .padding(.horizontal, 25)
-                .background(Color(.systemGray6))
+                .background(Color.gray.opacity(0.08))
                 .cornerRadius(8)
                 .overlay(
                     HStack {

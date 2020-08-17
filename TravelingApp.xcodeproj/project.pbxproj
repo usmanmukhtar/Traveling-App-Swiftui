@@ -7,33 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1637055B24E3C464007C217E /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1637055A24E3C464007C217E /* RatingView.swift */; };
-		165747C224E2A9C700077DF5 /* DetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165747C124E2A9C700077DF5 /* DetailedView.swift */; };
-		165747C624E2D16100077DF5 /* SingleFlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165747C524E2D16100077DF5 /* SingleFlight.swift */; };
+		164F864424E7F097000E5B4A /* DetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164F864324E7F097000E5B4A /* DetailedView.swift */; };
+		164F864624E7F2FA000E5B4A /* BottomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164F864524E7F2FA000E5B4A /* BottomTabBar.swift */; };
+		164F864824E7F6BC000E5B4A /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164F864724E7F6BC000E5B4A /* StoryView.swift */; };
+		164F864A24E7FDD8000E5B4A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164F864924E7FDD8000E5B4A /* CardView.swift */; };
+		164F864C24E800DE000E5B4A /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164F864B24E800DE000E5B4A /* SearchView.swift */; };
+		164F864E24E805C9000E5B4A /* SingleFlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164F864D24E805C9000E5B4A /* SingleFlight.swift */; };
+		164F865024E80A62000E5B4A /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164F864F24E80A61000E5B4A /* RatingView.swift */; };
 		16681C2624E1223C00C08875 /* TravelingAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16681C2524E1223C00C08875 /* TravelingAppApp.swift */; };
 		16681C2824E1223C00C08875 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16681C2724E1223C00C08875 /* ContentView.swift */; };
 		16681C2A24E1223D00C08875 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16681C2924E1223D00C08875 /* Assets.xcassets */; };
 		16681C2D24E1223D00C08875 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16681C2C24E1223D00C08875 /* Preview Assets.xcassets */; };
-		16681C3524E12B9D00C08875 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16681C3424E12B9D00C08875 /* SearchView.swift */; };
-		16681C3724E1310900C08875 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16681C3624E1310900C08875 /* TabbarView.swift */; };
-		16681C3924E16ED600C08875 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16681C3824E16ED600C08875 /* CardView.swift */; };
-		16681C3B24E18C4C00C08875 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16681C3A24E18C4C00C08875 /* StoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1637055A24E3C464007C217E /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
-		165747C124E2A9C700077DF5 /* DetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedView.swift; sourceTree = "<group>"; };
-		165747C524E2D16100077DF5 /* SingleFlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFlight.swift; sourceTree = "<group>"; };
+		164F864324E7F097000E5B4A /* DetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedView.swift; sourceTree = "<group>"; };
+		164F864524E7F2FA000E5B4A /* BottomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabBar.swift; sourceTree = "<group>"; };
+		164F864724E7F6BC000E5B4A /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
+		164F864924E7FDD8000E5B4A /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		164F864B24E800DE000E5B4A /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		164F864D24E805C9000E5B4A /* SingleFlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFlight.swift; sourceTree = "<group>"; };
+		164F864F24E80A61000E5B4A /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		16681C2224E1223C00C08875 /* TravelingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16681C2524E1223C00C08875 /* TravelingAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelingAppApp.swift; sourceTree = "<group>"; };
 		16681C2724E1223C00C08875 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		16681C2924E1223D00C08875 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16681C2C24E1223D00C08875 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		16681C2E24E1223D00C08875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		16681C3424E12B9D00C08875 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
-		16681C3624E1310900C08875 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
-		16681C3824E16ED600C08875 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		16681C3A24E18C4C00C08875 /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,15 +66,15 @@
 		16681C2424E1223C00C08875 /* TravelingApp */ = {
 			isa = PBXGroup;
 			children = (
-				16681C2524E1223C00C08875 /* TravelingAppApp.swift */,
 				16681C2724E1223C00C08875 /* ContentView.swift */,
-				16681C3824E16ED600C08875 /* CardView.swift */,
-				165747C124E2A9C700077DF5 /* DetailedView.swift */,
-				16681C3424E12B9D00C08875 /* SearchView.swift */,
-				16681C3A24E18C4C00C08875 /* StoryView.swift */,
-				1637055A24E3C464007C217E /* RatingView.swift */,
-				165747C524E2D16100077DF5 /* SingleFlight.swift */,
-				16681C3624E1310900C08875 /* TabbarView.swift */,
+				164F864924E7FDD8000E5B4A /* CardView.swift */,
+				164F864B24E800DE000E5B4A /* SearchView.swift */,
+				164F864724E7F6BC000E5B4A /* StoryView.swift */,
+				164F864524E7F2FA000E5B4A /* BottomTabBar.swift */,
+				164F864F24E80A61000E5B4A /* RatingView.swift */,
+				164F864324E7F097000E5B4A /* DetailedView.swift */,
+				164F864D24E805C9000E5B4A /* SingleFlight.swift */,
+				16681C2524E1223C00C08875 /* TravelingAppApp.swift */,
 				16681C2924E1223D00C08875 /* Assets.xcassets */,
 				16681C2E24E1223D00C08875 /* Info.plist */,
 				16681C2B24E1223D00C08875 /* Preview Content */,
@@ -159,15 +159,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16681C3B24E18C4C00C08875 /* StoryView.swift in Sources */,
+				164F864824E7F6BC000E5B4A /* StoryView.swift in Sources */,
 				16681C2824E1223C00C08875 /* ContentView.swift in Sources */,
-				16681C3524E12B9D00C08875 /* SearchView.swift in Sources */,
-				1637055B24E3C464007C217E /* RatingView.swift in Sources */,
-				16681C3724E1310900C08875 /* TabbarView.swift in Sources */,
-				165747C224E2A9C700077DF5 /* DetailedView.swift in Sources */,
-				165747C624E2D16100077DF5 /* SingleFlight.swift in Sources */,
+				164F864424E7F097000E5B4A /* DetailedView.swift in Sources */,
+				164F865024E80A62000E5B4A /* RatingView.swift in Sources */,
+				164F864C24E800DE000E5B4A /* SearchView.swift in Sources */,
+				164F864624E7F2FA000E5B4A /* BottomTabBar.swift in Sources */,
+				164F864E24E805C9000E5B4A /* SingleFlight.swift in Sources */,
+				164F864A24E7FDD8000E5B4A /* CardView.swift in Sources */,
 				16681C2624E1223C00C08875 /* TravelingAppApp.swift in Sources */,
-				16681C3924E16ED600C08875 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
